@@ -16,31 +16,34 @@
         <div>• Семейство Linux</div>
         <div onclick="window.location.href='macos.html'">• Семейство macOS</div>
       </div>
+      <div id="cards_panel-container">
       <div id="cards-container">
-        <div class="cards-container-linux">
-          <div>Kali linux</div>
+        <div class="cards-container-linux" onclick="extra_info('kali')">
+          <div>Kali Linux</div>
           <div><img src="../img/kali-linux-header.jpg" /></div>
           <div>Год выхода: 2013<br />Предназначен прежде всего для проведения тестов на безопасность</div>
           <div><a href="linux/kali.html">Подробнее</a></div>
         </div>
-        <div class="cards-container-linux">
+        <div class="cards-container-linux" onclick="extra_info('astra')">
           <div>Astra Linux</div>
           <div><img src="../img/astra.png" /></div>
           <div>Год выхода: 2009<br />Российская альтернатива Microsoft Windows</div>
           <div><a href="linux/astra.html">Подробнее</a></div>
         </div>
-        <div class="cards-container-linux">
+        <div class="cards-container-linux" onclick="extra_info('mint')">
           <div>Linux Mint</div>
           <div><img src="../img/Linux-Mint.jpg" /></div>
           <div>Год выхода: 2006<br />Развиваемый сообществом бесплатный дистрибутив Linux</div>
           <div><a href="linux/mint.html">Подробнее</a></div>
         </div>
-        <div class="cards-container-linux">
+        <div class="cards-container-linux" onclick="extra_info('ubuntu')">
           <div>Ubuntu</div>
           <div><img src="../img/ubuntu.jpeg" /></div>
           <div>Год выхода: 2004<br />Один из самых популярных дистрибутивов Linux</div>
           <div><a href="linux/ubuntu.html">Подробнее</a></div>
         </div>
+      </div>
+      <div class="panel notvisible" id="panel_linux"></div>
       </div>
     </div>
 
@@ -49,4 +52,5 @@
     <div onclick="window.location.href='feedback.html'" id="feedback">Оставить отзыв</div>
     <div onclick="window.location.href='about.html'" id="about">О нас</div>
   </body>
+  <script type="text/javascript" src="../js/linux.js"></script>
 </html>

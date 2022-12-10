@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: white;
+  color: black;
 }
 
 #header {
@@ -84,7 +84,7 @@ transition: 0.5s;
 
 #cards-container {
   margin-left: 60px;
-  width: 80%;
+  width: 100%;
   flex-wrap: wrap;
   display: flex;
 }
@@ -93,7 +93,7 @@ transition: 0.5s;
   padding: 15px;
   text-align: center;
   margin: 15;
-  width: 200px;
+  width: 220px;
   height: 300px;
   color: black;
   background-color: gray;
@@ -109,6 +109,7 @@ transition: 0.5s;
   min-height: 80px;
   text-align: left;
   font-size: 15px;
+  justify-content: space-around;
 }
 @media screen and (max-width: 800px) {
   #cards-container > div div:nth-child(3) {
@@ -172,4 +173,60 @@ transition: 0.5s;
 #name:hover
 {
   cursor: pointer;
+}
+
+.panel
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: -2000px;
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 175px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.45);
+  font-size: 20px;
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+  visibility: 100%;
+}
+
+#panel_linux.notvisible
+{
+  transition: 1s;
+}
+
+#panel_linux.visible
+{    
+  transition: 1s;
+  transform: translateX(2000px);
+}
+
+#panel_linux.hidden
+{
+  left: 0;    
+  transition: 1s;
+  transform: translateX(2000px);
+}
+
+#panel_linux.visible2
+{
+  left: 0;
+  transition: 1s;
+  transform: translateX(0px);
+}
+
+#cards_panel-container
+{
+  max-width: 80%;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
 }

@@ -4,7 +4,7 @@
 }
 
 a {
-  color: white;
+  color: black;
 }
 
 body {
@@ -110,28 +110,31 @@ body {
 
 #cards-container {
   margin-left: 60px;
-  width: 80%;
-  flex-wrap: wrap;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
+
 .cards-container-macos {
-transition: 0.5s;
-  position: relative;
-  padding: 15px;
-  text-align: center;
-  margin: 15;
-  margin-top: 35px;
-  width: 250px;
-  height: 350px;
+  transition: 0.5s;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  color: black;
+  margin: 15px;
+  margin-top: 35px;
+  padding: 15px;
   background-color: rgb(229, 229, 229);
   box-shadow: 0px 0px 10px black;
+
+  position: relative;
+  text-align: center;
+  width: 250px;
+  height: 350px;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 #cards-container > div img {
   width: 90%;
 }
@@ -165,7 +168,7 @@ transition: 0.5s;
 #cards-container > div::after {
   content: "";
   position: absolute;
-  background-image: url("../img/  .png");
+  background-image: url("../img/tricolor.png");
   background-size: cover;
   height: 20px;
   width: 51px;
@@ -186,9 +189,6 @@ transition: 0.5s;
 }
 
 #feedback {
-
-
-
   position: fixed;
   bottom: 7.5px;
   right: 7.5px;
@@ -205,9 +205,6 @@ transition: 0.5s;
 }
 
 #about {
-
-
-
   position: fixed;
   bottom: 7.5px;
   left: 7.5px;
@@ -232,4 +229,60 @@ background-color: #b3b3b3;
 #name:hover
 {
   cursor: pointer;
+}
+
+.panel
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: -2000px;
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 175px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.45);
+  font-size: 20px;
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+  visibility: 100%;
+}
+
+#panel_mac.notvisible
+{
+  transition: 1s;
+}
+
+#panel_mac.visible
+{    
+  transition: 1s;
+  transform: translateX(2000px);
+}
+
+#panel_mac.hidden
+{
+  left: 0;    
+  transition: 1s;
+  transform: translateX(2000px);
+}
+
+#panel_mac.visible2
+{
+  left: 0;
+  transition: 1s;
+  transform: translateX(0px);
+}
+
+#cards_panel-container
+{
+  max-width: 80%;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
 }

@@ -16,8 +16,9 @@
         <div onclick="window.location.href='linux.html'">• Семейство Linux</div>
         <div>• Семейство macOS</div>
       </div>
+      <div id="cards_panel-container">
       <div id="cards-container">
-        <div class="cards-container-macos">
+        <div class="cards-container-macos" onclick="extra_info()">
           <div>macOS</div>
           <div><img src="../img/macOS.jpeg" /></div>
           <div>
@@ -27,6 +28,8 @@
           <div><a href="macos/macos.html">Подробнее</a></div>
         </div>
       </div>
+      <div class="panel notvisible" id="panel_mac"></div>
+      </div>
     </div>
 
     
@@ -34,4 +37,5 @@
     <div onclick="window.location.href='feedback.html'" id="feedback">Оставить отзыв</div>
     <div onclick="window.location.href='about.html'" id="about">О нас</div>
   </body>
+  <script type="text/javascript" src="../js/mac.js"></script>
 </html>
