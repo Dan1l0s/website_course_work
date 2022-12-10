@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  width: 100vw;
+  background-image: url("../img/winxp.jpeg");
+  background-size: cover;
+  font-family: "Roboto Mono";
+}
+
+#header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 100px;
+  background-color: black;
+  color: greenyellow;
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  align-items: center;
+}
+#header img {
+  cursor: pointer;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 800px) {
+  #header {
+    padding-left: 15px;
+  }
+}
+
+#main-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+  #main-container {
+    flex-direction: column;
+  }
+  #main-container #menu {
+    width: 100%;
+  }
+  #main-container #cards-container {
+    width: 100%;
+    margin: 0;
+  }
+  #main-container #cards-container > div {
+    width: 60%;
+    margin: 15 auto;
+  }
+}
+
+#menu {
+  transition: 0.5s;
+  margin-top: 15px;
+  height: fit-content;
+  width: 20%;
+  background-color: black;
+  box-shadow: 0px 0px 10px blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15;
+}
+#menu div {
+  color: white;
+}
+#menu div:hover {
+  cursor: pointer;
+  color: greenyellow;
+}
+
+#cards-container {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}
+.cards-container-windows {
+	transition: 0.5s;
+  padding: 15px;
+  text-align: center;
+  margin: 15;
+  width: 220px;
+  height: 300px;
+  color: white;
+  background-color: black;
+  box-shadow: 0px 0px 10px blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#cards-container > div img {
+  width: 90%;
+}
+#cards-container > div div:nth-child(3) {
+  min-height: 80px;
+  text-align: center;
+  font-size: 15px;
+  justify-content: space-around;
+}
+@media screen and (max-width: 800px) {
+  #cards-container > div div:nth-child(3) {
+    text-align: left;
+  }
+}
+
+#cards-container > div div:nth-child(4):hover {
+  cursor: pointer;
+  color: greenyellow;
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  bottom: 0px;
+  text-align: center;
+  box-shadow: 0px 0px 10px black;
+  background-color: black;
+  color: greenyellow;
+}
+
+#feedback {
+  position: fixed;
+  bottom: 7.5px;
+  right: 7.5px;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  #feedback {
+    bottom: 37.5px;
+  }
+}
+#feedback:hover {
+  cursor: pointer;
+  color: greenyellow;
+}
+
+#about {
+  position: fixed;
+  bottom: 7.5px;
+  left: 7.5px;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  #about {
+    bottom: 37.5px;
+  }
+}
+#about:hover {
+  cursor: pointer;
+  color: greenyellow;
+}
+
+
+.cards-container-windows:hover {
+	background-color: #4d4d4d;
+}
+#menu:hover {
+	background-color: #4d4d4d;
+}
+#name:hover
+{
+  cursor: pointer;
+}
+
+.panel
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: -2000px;
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 300px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.45);
+  font-size: 20px;
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+  visibility: 100%;
+}
+
+#panel_win.notvisible
+{
+  transition: 1s;
+}
+
+#panel_win.visible
+{    
+  transition: 1s;
+  transform: translateX(2000px);
+}
+
+#panel_win.hidden
+{
+  left: 0;    
+  transition: 1s;
+  transform: translateX(2000px);
+}
+
+#panel_win.visible2
+{
+  left: 0;
+  transition: 1s;
+  transform: translateX(0px);
+}
+
+#cards_panel-container
+{
+  max-width: 80%;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  cursor: url("../img/cursor.png"), auto;
+  overflow-x: hidden;
+  margin: 0;
+  width: 100vw;
+  background-image: url("../img/macbg.jpg");
+  background-size: cover;
+  font-family: "Roboto Mono";
+}
+
+a, a:visited
+{
+  color: white;
+}
+
+#header {
+  opacity: 0.9;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 100px;
+  background: linear-gradient(0deg, rgb(173, 173, 173) 0%, rgb(255, 255, 255) 100%);
+  color: black;
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  align-items: center;
+}
+#header img {
+  cursor: pointer;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 800px) {
+  #header {
+    padding-left: 15px;
+  }
+}
+
+#main-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+  #main-container {
+    flex-direction: column;
+  }
+  #main-container #menu {
+    width: 100%;
+  }
+  #main-container #info-container {
+    width: 100%;
+    margin: 35 0;
+  }
+}
+
+#menu {
+  position: relative;
+  margin-top: 35px;
+  height: fit-content;
+  width: 20%;
+  background-color: rgb(229, 229, 229);
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#menu div {
+  color: black;
+}
+#menu div:hover {
+  color: rgb(80, 80, 80);
+  cursor: url("../img/pointer.png"), pointer;
+}
+#menu::before {
+  content: "";
+  box-shadow: 0 1px 1px gray;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  top: -20px;
+  left: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: linear-gradient(0deg, rgb(173, 173, 173) 0%, rgb(255, 255, 255) 100%);
+}
+#menu::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/tricolor.png");
+  background-size: cover;
+  height: 20px;
+  width: 51px;
+  top: -20px;
+  left: 4px;
+}
+
+#info-container {
+  position: relative;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 15;
+  margin-top: 35;
+  padding: 15px;
+  background-color: rgb(229, 229, 229);
+  box-shadow: 0px 0px 10px black;
+  width: 80%;
+}
+#info-container::before {
+  content: "";
+  box-shadow: 0 1px 1px gray;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  top: -20px;
+  left: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: linear-gradient(0deg, rgb(173, 173, 173) 0%, rgb(255, 255, 255) 100%);
+}
+#info-container::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/tricolor.png");
+  background-size: cover;
+  height: 20px;
+  width: 51px;
+  top: -20px;
+  left: 4px;
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  bottom: 0px;
+  text-align: center;
+  box-shadow: 0px 0px 10px black;
+  background: linear-gradient(0deg, rgb(173, 173, 173) 0%, rgb(255, 255, 255) 100%);
+  color: black;
+}
+
+#feedback {
+  position: fixed;
+  bottom: 7.5px;
+  right: 7.5px;
+}
+@media screen and (max-width: 600px) {
+  #feedback {
+    bottom: 35px;
+    color: white;
+  }
+}
+#feedback:hover {
+  cursor: pointer;
+  color: rgb(80, 80, 80);
+}
+
+#about {
+  position: fixed;
+  bottom: 7.5px;
+  left: 7.5px;
+}
+@media screen and (max-width: 600px) {
+  #about {
+    bottom: 35px;
+    color: white;
+  }
+}
+#about:hover {
+  cursor: pointer;
+  color: rgb(80, 80, 80);
+}
+#name:hover
+{
+  cursor: pointer;
+}

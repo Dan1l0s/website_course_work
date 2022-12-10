@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../style/windows-style.css" />
+    <link rel="icon" href="../img/win-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Windows</title>
+  </head>
+  <body>
+    <div id="header">
+      <div onclick="window.location.href='../index.html'"><img src="../img/win.gif" /></div>
+      <div onclick="window.location.href='../index.html'" id="name">Современные операционные системы</div>
+    </div>
+    <div id="main-container">
+      <div id="menu">
+        <div>• Семейство Windows</div>
+        <div onclick="window.location.href='linux.html'">• Семейство Linux</div>
+        <div onclick="window.location.href='macos.html'">• Семейство macOS</div>
+      </div>
+      <div id="cards_panel-container">
+        <div id="cards-container">
+        <div class="cards-container-windows" onclick="extra_info('win11')">
+          <div>Windows 11</div>
+          <div><img src="../img/win11.jpg"/></div>
+          <div>Год выпуска: 2021</div>
+          <div><a href="windows/win11.html">Подробнее</a></div>
+        </div>
+        <div class="cards-container-windows" onclick="extra_info('win10')">
+          <div>Windows 10</div>
+          <div><img src="../img/win10.jpeg"/></div>
+          <div>Год выпуска: 2015</div>
+          <div><a href="windows/win10.html">Подробнее</a></div>
+        </div>  
+        <div class="cards-container-windows" onclick="extra_info('win81')" >
+          <div>Windows 8.1</div>
+          <div><img src="../img/win81.jpg"/></div>
+          <div>Год выпуска: 2013</div>
+          <div><a href="windows/win81.html">Подробнее</a></div>
+        </div>
+        <div class="cards-container-windows" onclick="extra_info('win8')">
+          <div>Windows 8</div>
+          <div><img src="../img/win8.jpg"/></div>
+          <div>Год выпуска: 2012<br />Расширенная поддержка была прекращена 12 января 2016 года.</div>
+          <div><a href="windows/win8.html">Подробнее</a></div>
+        </div>
+        <div class="cards-container-windows" onclick="extra_info('win7')">
+          <div>Windows 7</div>
+          <div><img src="../img/win7.png" /></div>
+          <div>Год выпуска: 2009<br />Расширенная поддержка была прекращена 14 января 2020 года.</div>
+          <div><a href="windows/win7.html">Подробнее</a></div>
+        </div>
+      </div>
+      <div class="panel notvisible" id="panel_win"></div>
+    </div>
+    </div>  
+    <div id="footer">Copyright © danilos01pr@gmail.com</div>
+    <div onclick="window.location.href='feedback.html'" id="feedback">Оставить отзыв</div>
+    <div onclick="window.location.href='about.html'" id="about">О нас</div>
+  </body>
+  <script type="text/javascript" src="../js/windows.js"></script>
+</html>

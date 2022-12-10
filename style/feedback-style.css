@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  width: 100vw;
+  background-color: rgb(220, 220, 220);
+  background-image: url("../img/default_bg.png");
+  background-size: cover;
+  font-family: "Roboto Mono";
+}
+
+#header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: gray;
+  color: black;
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header img {
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+#main-container {
+  display: flex;
+  padding: 15px;
+  height: 220px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  box-shadow: 0 0 10px black;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 25px;
+  min-height: 50px;
+}
+#main-container input {
+  background-color: transparent;
+  border: 0;
+  font-family: "Roboto Mono";
+  border-bottom: 2px solid black;
+}
+#main-container textarea {
+  font-family: "Roboto Mono";
+  background-color:rgb(202, 202, 202);
+  width: 50%;
+  height: 100px;
+}
+#main-container div:nth-child(3):hover {
+  cursor: pointer;
+  color: rgb(202, 202, 202);
+}
+#main-container > div:nth-child(1) {
+  display: flex;
+}
+#main-container > div:nth-child(1) div {
+  margin: 0 15;
+}
+@media screen and (max-width: 800px) {
+  #main-container > div:nth-child(1) {
+    flex-direction: column;
+  }
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  bottom: 0px;
+  text-align: center;
+  box-shadow: 0px 0px 10px black;
+  background-color: gray;
+  color: black;
+}
+
+#goback {
+  position: fixed;
+  bottom: 7.5px;
+  right: 7.5px;
+}
+@media screen and (max-width: 600px) {
+  #goback {
+    bottom: 37.5px;
+  }
+}
+#goback:hover {
+  cursor: pointer;
+  color: rgb(202, 202, 202);
+}
+
+#about {
+  position: fixed;
+  bottom: 7.5px;
+  left: 7.5px;
+}
+@media screen and (max-width: 600px) {
+  #about {
+    bottom: 37.5px;
+  }
+}
+#about:hover {
+  cursor: pointer;
+  color: rgb(202, 202, 202);
+}
+#name:hover
+{
+  cursor: pointer;
+  color: rgb(202, 202, 202);
+}

@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  cursor: url("../img/cursor.png"), auto;
+  overflow-x: hidden;
+  margin: 0;
+  width: 100vw;
+  background-image: url("../img/linux_bg.jpg");
+  background-size: cover;
+  font-family: "Roboto Mono";
+}
+
+a {
+  color: white;
+}
+
+#header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 100px;
+  background-color: gray;
+  color: black;
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  align-items: center;
+}
+#header img {
+  cursor: pointer;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 800px) {
+  #header {
+    padding-left: 15px;
+  }
+}
+
+#main-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+  #main-container {
+    flex-direction: column;
+  }
+  #main-container #menu {
+    width: 100%;
+  }
+  #main-container #cards-container {
+    width: 100%;
+    margin: 0;
+  }
+  #main-container #cards-container > div {
+    width: 60%;
+    margin: 15 auto;
+  }
+}
+
+#menu {
+transition: 0.5s;
+  margin-top: 15px;
+  height: fit-content;
+  width: 20%;
+  background-color: gray;
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15;
+}
+#menu div {
+  color: black;
+}
+#menu div:hover {
+  color: white;
+  cursor: url("../img/pointer.png"), pointer;
+}
+
+#cards-container {
+  margin-left: 60px;
+  width: 80%;
+  flex-wrap: wrap;
+  display: flex;
+}
+.cards-container-linux {
+transition: 0.5s;
+  padding: 15px;
+  text-align: center;
+  margin: 15;
+  width: 200px;
+  height: 300px;
+  color: black;
+  background-color: gray;
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#cards-container > div img {
+  width: 90%;
+}
+#cards-container > div div:nth-child(3) {
+  min-height: 80px;
+  text-align: left;
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  #cards-container > div div:nth-child(3) {
+    text-align: center;
+  }
+}
+#cards-container > div div:nth-child(4):hover {
+  cursor: pointer;
+  color: white;
+  cursor: url("../img/pointer.png"), pointer;
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  bottom: 0px;
+  text-align: center;
+  box-shadow: 0px 0px 10px black;
+  background-color: gray;
+  color: black;
+}
+
+#feedback {
+  position: fixed;
+  bottom: 7.5px;
+  right: 7.5px;
+}
+@media screen and (max-width: 600px) {
+  #feedback {
+    bottom: 37.5px;
+  }
+}
+#feedback:hover {
+  cursor: pointer;
+  color: white;
+}
+
+#about {
+  position: fixed;
+  bottom: 7.5px;
+  left: 7.5px;
+}
+@media screen and (max-width: 600px) {
+  #about {
+    bottom: 37.5px;
+  }
+}
+#about:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.cards-container-linux:hover {
+	background-color:#b3b3b3;
+}
+#menu:hover {
+	background-color:#b3b3b3;
+}
+#name:hover
+{
+  cursor: pointer;
+}

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  width: 100vw;
+  background-color: rgb(220, 220, 220);
+  background-image: url("../img/default_bg.png");
+  background-size: cover;
+  font-family: "Roboto Mono";
+}
+
+#header{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: gray;
+  color: black;
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#name:hover
+{
+  cursor: pointer;
+  color: rgb(202, 202, 202);
+}
+#header img {
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+#main-container {
+  width: 80%;
+  margin: 35 auto;
+  background-color: gray;
+  box-shadow: 0 0 10px black;
+}
+#main-container div:nth-child(1) {
+  word-break: break-all;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15;
+  text-align: center;
+}
+#main-container #socials {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  height: 60px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+#main-container #socials div {
+  padding: 5px;
+  position: relative;
+  margin: 0 15;
+  text-align: center;
+  transition: 0.5s;
+}
+#main-container #socials div img {
+  width: 40px;
+  height: 40px;
+}
+#main-container #socials div::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 25px;
+  background-color: black;
+  width: 0px;
+  height: 1.5px;
+  transition: 0.4s;
+}
+#main-container #socials div:hover::after {
+  left: 0px;
+  width: 50px;
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  bottom: 0px;
+  text-align: center;
+  box-shadow: 0px 0px 10px black;
+  background-color: gray;
+  color: black;
+}
+
+#feedback {
+  position: fixed;
+  bottom: 7.5px;
+  right: 7.5px;
+}
+@media screen and (max-width: 600px) {
+  #feedback {
+    bottom: 37.5px;
+  }
+}
+#feedback:hover {
+  cursor: pointer;
+  color: rgb(202, 202, 202);
+}
+
+#goback {
+  position: fixed;
+  bottom: 7.5px;
+  left: 7.5px;
+}
+@media screen and (max-width: 600px) {
+  #goback {
+    bottom: 37.5px;
+  }
+}
+#goback:hover {
+  cursor: pointer;
+  color: rgb(202, 202, 202);
+}

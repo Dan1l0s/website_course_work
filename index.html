@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./style/index-style.css" />
+    <link rel="icon" href="./img/default-logo.png" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+    <title>Главная</title>
+  </head>
+  <body>
+    <div id="header">
+      <div id="name" onclick="window.location.href='./index.html'"><img src="./img/default-logo.png" /></div>
+      <div id="name" onclick="window.location.href='./index.html'">Современные операционные системы</div>
+    </div>
+    <div id="main-container">
+      <div>
+        Операционная система, сокр. ОС — комплекс управляющих и обрабатывающих программ, которые, c одной стороны,
+        выступают как интерфейс между устройствами вычислительной системы и прикладными программами, а с другой стороны
+        — предназначены для управления устройствами, управления вычислительными процессами, эффективного распределения
+        вычислительных ресурсов между вычислительными процессами и организации надёжных вычислений.
+        <p>
+          Данный сайт представляет собой архив современных операционных систем, используемых обычными пользователями, в котором предельно подробно описаны все
+          существующие на данный момент популярные среди пользователей ОС.
+        </p>
+      </div>
+      <div class="card-all">
+        <div class="card" onclick="window.location.href='pages/windows.html'">
+          <img src="./img/win_window.png" />
+          <div>
+            <div><img src="./img/win.gif" /></div>
+            <div>Windows</div>
+          </div>
+        </div>
+        <div class="card" onclick="window.location.href='pages/linux.html'">
+          <img src="./img/linux-window.png" />
+          <div>
+            <div><img src="./img/linux.gif" /></div>
+            <div style="color: white">Linux</div>
+          </div>
+        </div>
+        <div class="card" onclick="window.location.href='pages/macos.html'">
+          <img src="./img/macOS-window.png" />
+          <div>
+            <div><img src="./img/mac.gif" /></div>
+            <div>macOS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="footer">Copyright © danilos01pr@gmail.com</div>
+    <div onclick="window.location.href='pages/feedback.html'" id="feedback">Оставить отзыв</div>
+    <div onclick="window.location.href='pages/about.html'" id="about">О нас</div>
+  </body>
+  <script src="./js/index.js"></script>
+</html>
