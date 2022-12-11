@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 * {
   box-sizing: border-box;
 }
-
-
-
 body {
   cursor: url("../img/cursor.png"), auto;
   overflow-x: hidden;
@@ -13,12 +11,10 @@ body {
   background-size: cover;
   font-family: "Roboto Mono";
 }
-
 a, a:visited
 {
   color: black;
 }
-
 #header {
   opacity: 0.9;
   width: 100%;
@@ -37,11 +33,6 @@ a, a:visited
   width: 40px;
   height: 40px;
 }
-@media screen and (max-width: 800px) {
-  #header {
-    padding-left: 15px;
-  }
-}
 
 #main-container {
   display: flex;
@@ -49,6 +40,9 @@ a, a:visited
   margin: 0 auto;
 }
 @media screen and (max-width: 800px) {
+  #header {
+    padding-left: 15px;
+  }
   #main-container {
     flex-direction: column;
   }
@@ -162,6 +156,10 @@ a, a:visited
     bottom: 35px;
     color: white;
   }
+  #about {
+    bottom: 35px;
+    color: white;
+  }
 }
 #feedback:hover {
   cursor: pointer;
@@ -172,12 +170,6 @@ a, a:visited
   position: fixed;
   bottom: 7.5px;
   left: 7.5px;
-}
-@media screen and (max-width: 600px) {
-  #about {
-    bottom: 35px;
-    color: white;
-  }
 }
 #about:hover {
   cursor: pointer;

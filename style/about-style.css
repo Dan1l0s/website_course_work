@@ -107,6 +107,9 @@ body {
   #feedback {
     bottom: 37.5px;
   }
+  #goback {
+    bottom: 37.5px;
+  }
 }
 #feedback:hover {
   cursor: pointer;
@@ -117,11 +120,6 @@ body {
   position: fixed;
   bottom: 7.5px;
   left: 7.5px;
-}
-@media screen and (max-width: 600px) {
-  #goback {
-    bottom: 37.5px;
-  }
 }
 #goback:hover {
   cursor: pointer;

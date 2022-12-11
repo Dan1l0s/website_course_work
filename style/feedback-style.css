@@ -89,11 +89,6 @@ body {
   bottom: 7.5px;
   right: 7.5px;
 }
-@media screen and (max-width: 600px) {
-  #goback {
-    bottom: 37.5px;
-  }
-}
 #goback:hover {
   cursor: pointer;
   color: rgb(202, 202, 202);
@@ -105,6 +100,9 @@ body {
   left: 7.5px;
 }
 @media screen and (max-width: 600px) {
+  #goback {
+    bottom: 37.5px;
+  }
   #about {
     bottom: 37.5px;
   }

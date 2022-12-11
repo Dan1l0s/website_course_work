@@ -144,6 +144,9 @@ body {
   #feedback {
     bottom: 37.5px;
   }
+  #about {
+    bottom: 37.5px;
+  }
 }
 #feedback:hover {
   cursor: pointer;
@@ -155,11 +158,6 @@ body {
   bottom: 7.5px;
   left: 7.5px;
   color: white;
-}
-@media screen and (max-width: 600px) {
-  #about {
-    bottom: 37.5px;
-  }
 }
 #about:hover {
   cursor: pointer;

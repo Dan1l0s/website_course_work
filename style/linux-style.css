@@ -34,11 +34,6 @@ a {
   width: 40px;
   height: 40px;
 }
-@media screen and (max-width: 800px) {
-  #header {
-    padding-left: 15px;
-  }
-}
 
 #main-container {
   display: flex;
@@ -46,6 +41,9 @@ a {
   margin: 0 auto;
 }
 @media screen and (max-width: 800px) {
+  #header {
+    padding-left: 15px;
+  }
   #main-container {
     flex-direction: column;
   }
@@ -59,6 +57,9 @@ a {
   #main-container #cards-container > div {
     width: 60%;
     margin: 15 auto;
+  }
+  #cards-container > div div:nth-child(3) {
+    text-align: center;
   }
 }
 
@@ -111,11 +112,6 @@ transition: 0.5s;
   font-size: 15px;
   justify-content: space-around;
 }
-@media screen and (max-width: 800px) {
-  #cards-container > div div:nth-child(3) {
-    text-align: center;
-  }
-}
 #cards-container > div div:nth-child(4):hover {
   cursor: pointer;
   color: white;
@@ -143,6 +139,9 @@ transition: 0.5s;
   #feedback {
     bottom: 37.5px;
   }
+  #about {
+    bottom: 37.5px;
+  }
 }
 #feedback:hover {
   cursor: pointer;
@@ -153,11 +152,6 @@ transition: 0.5s;
   position: fixed;
   bottom: 7.5px;
   left: 7.5px;
-}
-@media screen and (max-width: 600px) {
-  #about {
-    bottom: 37.5px;
-  }
 }
 #about:hover {
   cursor: pointer;
