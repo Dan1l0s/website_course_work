@@ -106,10 +106,12 @@ a, a:visited
 }
 @media screen and (max-width: 600px) {
   #feedback {
-    bottom: 37.5px;
+    color: white;
+    margin-bottom: 25px;
   }
   #about {
-    bottom: 37.5px;
+    color: white;
+    margin-bottom: 25px;
   }
 }
 #feedback:hover {

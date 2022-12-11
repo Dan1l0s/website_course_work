@@ -142,10 +142,10 @@ body {
 }
 @media screen and (max-width: 600px) {
   #feedback {
-    bottom: 37.5px;
+    margin-bottom: 25px;
   }
   #about {
-    bottom: 37.5px;
+    margin-bottom: 25px;
   }
 }
 #feedback:hover {

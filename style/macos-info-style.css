@@ -153,11 +153,11 @@ a, a:visited
 }
 @media screen and (max-width: 600px) {
   #feedback {
-    bottom: 35px;
+    margin-bottom: 25px;
     color: white;
   }
   #about {
-    bottom: 35px;
+    margin-bottom: 25px;
     color: white;
   }
 }

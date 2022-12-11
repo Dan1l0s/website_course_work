@@ -67,10 +67,12 @@ body {
 {
   #feedback {
     bottom: 35px;
+    margin-bottom: 25px;
     color: white;
   }
   #about {
     bottom: 35px;
+    margin-bottom: 25px;
     color: white;
   }
 }

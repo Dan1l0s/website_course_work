@@ -99,12 +99,12 @@ body {
   bottom: 7.5px;
   left: 7.5px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #goback {
-    bottom: 37.5px;
+    margin-bottom: 25px;
   }
   #about {
-    bottom: 37.5px;
+    margin-bottom: 25px;
   }
 }
 #about:hover {
