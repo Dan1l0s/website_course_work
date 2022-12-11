@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  overflow-x: hidden;
   margin: 0;
   width: 100vw;
   background-color: rgb(220, 220, 220);

@@ -16,20 +16,36 @@ function extra_info(text)
                     if (element.classList.contains("visible"))
                     {
                         element.classList.remove("visible")
+                        element.classList.add("hidden");
                     }
                     if (element.classList.contains("visible2"))
                     {
                         element.classList.remove("visible2")
+                        element.classList.add("notvisible");
                     }
-                    element.classList.add("hidden");
                 }
                 else if (element.classList.contains("hidden"))
                 {
                     element.classList.remove("hidden");
                     element.classList.add("visible2");
                 }
+                else 
+                {
+                    element.classList.remove("notvisible");
+                    element.classList.add("visible");
+                }
                 return;
-            }    
+            }
+            else if (element.classList.contains("hidden"))
+            {
+                element.classList.remove("hidden");
+                element.classList.add("visible2");
+            }
+            else if (element.classList.contains("notvisible"))
+            {
+                element.classList.remove("notvisible");
+                element.classList.add("visible");
+            } 
             element.innerHTML = kali;
             break;
         case 'astra':
@@ -40,20 +56,36 @@ function extra_info(text)
                     if (element.classList.contains("visible"))
                     {
                         element.classList.remove("visible")
+                        element.classList.add("hidden");
                     }
                     if (element.classList.contains("visible2"))
                     {
                         element.classList.remove("visible2")
+                        element.classList.add("notvisible");
                     }
-                    element.classList.add("hidden");
                 }
                 else if (element.classList.contains("hidden"))
                 {
                     element.classList.remove("hidden");
                     element.classList.add("visible2");
                 }
+                else 
+                {
+                    element.classList.remove("notvisible");
+                    element.classList.add("visible");
+                }
                 return;
             }
+            else if (element.classList.contains("hidden"))
+            {
+                element.classList.remove("hidden");
+                element.classList.add("visible2");
+            }
+            else if (element.classList.contains("notvisible"))
+            {
+                element.classList.remove("notvisible");
+                element.classList.add("visible");
+            } 
             element.innerHTML = astra;
             break;
         case 'mint':
@@ -64,20 +96,36 @@ function extra_info(text)
                     if (element.classList.contains("visible"))
                     {
                         element.classList.remove("visible")
+                        element.classList.add("hidden");
                     }
                     if (element.classList.contains("visible2"))
                     {
                         element.classList.remove("visible2")
+                        element.classList.add("notvisible");
                     }
-                    element.classList.add("hidden");
                 }
                 else if (element.classList.contains("hidden"))
                 {
                     element.classList.remove("hidden");
                     element.classList.add("visible2");
                 }
+                else if (element.classList.contains("notvisible"))
+                {
+                    element.classList.remove("notvisible");
+                    element.classList.add("visible");
+                } 
                 return;
             }
+            else if (element.classList.contains("hidden"))
+            {
+                element.classList.remove("hidden");
+                element.classList.add("visible2");
+            }
+            else if (element.classList.contains("notvisible"))
+            {
+                element.classList.remove("notvisible");
+                element.classList.add("visible");
+            } 
             element.innerHTML = mint;
             break;
         case 'ubuntu':
@@ -88,29 +136,37 @@ function extra_info(text)
                     if (element.classList.contains("visible"))
                     {
                         element.classList.remove("visible")
+                        element.classList.add("hidden");
                     }
                     if (element.classList.contains("visible2"))
                     {
                         element.classList.remove("visible2")
+                        element.classList.add("notvisible");
                     }
-                    element.classList.add("hidden");
                 }
                 else if (element.classList.contains("hidden"))
                 {
                     element.classList.remove("hidden");
                     element.classList.add("visible2");
                 }
+                else 
+                {
+                    element.classList.remove("notvisible");
+                    element.classList.add("visible");
+                }
                 return;
             }
+            else if (element.classList.contains("hidden"))
+            {
+                element.classList.remove("hidden");
+                element.classList.add("visible2");
+            }
+            else if (element.classList.contains("notvisible"))
+            {
+                element.classList.remove("notvisible");
+                element.classList.add("visible");
+            } 
             element.innerHTML = ubuntu;
             break;
-    }
-    if (element.classList.contains("notvisible")){
-        element.classList.remove("notvisible");
-        element.classList.add("visible");
-    }
-    if (element.classList.contains("hidden"))
-    {
-        element.classList.add("visible2");
     }
 }

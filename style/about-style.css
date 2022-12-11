@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+a, a:visited {
+  color: black;
+}
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -13,7 +17,7 @@ body {
   font-family: "Roboto Mono";
 }
 
-#header{
+#header {
   width: 100%;
   height: 50px;
   line-height: 50px;
@@ -36,18 +40,18 @@ body {
 }
 
 #main-container {
-  width: 80%;
+  width: 60%;
   margin: 35 auto;
   background-color: gray;
   box-shadow: 0 0 10px black;
 }
-#main-container div:nth-child(1) {
-  word-break: break-all;
-  width: 80%;
+#main-container div {
+  width: 60%;
   margin: 0 auto;
   padding: 15;
   text-align: center;
 }
+
 #main-container #socials {
   display: flex;
   width: fit-content;

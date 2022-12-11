@@ -1,5 +1,5 @@
 function send() {
-  if (document.querySelector("input").value == "") 
+  if (document.querySelector("input").value == "" || !document.querySelector("select").value.includes("@") || !document.querySelector("input").value.includes(".") || !(document.querySelector("input").value.includes("com") || document.querySelector("select").value.includes("ru")))
   {
     document.querySelector("input").style.borderBottomColor = "red";
     return;
