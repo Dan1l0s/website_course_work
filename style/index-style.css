@@ -51,7 +51,7 @@ body > background-image {
 }
 @media screen and (max-width: 800px) {
   #main-container > div {
-    padding: 15 10%;
+    padding: 15;
   }
 }
 #main-container > div:nth-child(2) {

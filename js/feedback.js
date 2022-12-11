@@ -1,9 +1,10 @@
 function send() {
-  if (document.querySelector("input").value == "" || !document.querySelector("select").value.includes("@") || !document.querySelector("input").value.includes(".") || !(document.querySelector("input").value.includes("com") || document.querySelector("select").value.includes("ru")))
+  if (document.querySelector("input").value == "" || !document.querySelector("input").value.includes("@") || !document.querySelector("input").value.includes(".") || !(document.querySelector("input").value.includes("com") || document.querySelector("input").value.includes("ru")))
   {
     document.querySelector("input").style.borderBottomColor = "red";
     return;
   }
+  document.querySelector("input").style.borderBottomColor = "black";
   document.getElementById("submit").onclick = undefined;
   document.getElementById("submit").style.cursor = "default";
   document.getElementById("submit").style.color = "black";
@@ -18,6 +19,6 @@ function send() {
   });
   console.log(params);
   var request = new XMLHttpRequest();
-  // request.open("POST", "http://5.228.43.423:9999/sendFeedback"); // - server address
+  // request.open("POST", "http://ip:port/sendFeedback"); // - server address
   // request.send(params);
 }
