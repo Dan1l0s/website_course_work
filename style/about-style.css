@@ -15,7 +15,7 @@ body {
   background-image: url("../img/default_bg.png");
   background-size: cover;
   font-family: "Roboto Mono";
-}
+} 
 
 #header {
   width: 100%;
@@ -44,6 +44,7 @@ body {
   margin: 35 auto;
   background-color: gray;
   box-shadow: 0 0 10px black;
+  margin-bottom: 100px;
 }
 #main-container div {
   width: 60%;
