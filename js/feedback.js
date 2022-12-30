@@ -18,7 +18,7 @@ function send() {
     msg: document.querySelector("textarea").value,
   });
   console.log(params);
-  var request = new XMLHttpRequest();
+  // var request = new XMLHttpRequest();
   // request.open("POST", "http://ip:port/sendFeedback"); // - server address
   // request.send(params);
 }
