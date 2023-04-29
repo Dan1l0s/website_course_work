@@ -8,44 +8,44 @@
   <body>
     <div id="header">
       <div onclick="window.location.href='../../index.html'"><img src="../../img/linux.gif" /></div>
-      <div onclick="window.location.href='../../index.html'" id="name">Современные операционные системы</div>
+      <div onclick="window.location.href='../../index.html'" id="name">Modern OS</div>
     </div>
     </div>
     <div id="main-container">
       <div id="menu">
-        <div onclick="window.location.href='../linux.html'">• Назад</div>
+        <div onclick="window.location.href='../linux.html'">• Previous page</div>
       </div>
       <div id="info-container">
-        Astra Linux - операционная система на базе ядра Linux, которая внедряется в России в качестве альтернативы Microsoft Windows.Обеспечивает степень защиты обрабатываемой информации до уровня государственной тайны «особой важности» включительно.
-        <br><br><br>
-        Особенности версии Special Edition:
+        Astra Linux is an operating system based on the Linux kernel, which is being implemented in Russia as an alternative to Microsoft Windows.Ensures the degree of protection of the processed information up to the level of state secrets of "special importance" inclusive.
+      <br><br><br>
+      Features of the Special Edition version:
+      <br><br>
+      Since the release of 2021 (1.7/4.7), the security modes "Basic" ("Eagle", non-certified version), "Enhanced" ("Voronezh") and "Maximum" ("Smolensk") are available in Astra Linux Special Edition. The "Enhanced" mode has all the features of the "Basic" mode and complements them, the "Maximum" mode has all the features of the "Enhanced" mode and also complements them.
+      <br><br>
+      In the "Enhanced" mode, mechanisms of mandatory integrity control and a closed software environment are available, significantly increasing the protection of the OS from hacking, viruses, seizure of authority, etc. The PARSEC security subsystem, which enters the "Enhanced" mode, is developed on the basis of a verified formal security model for access control and information flows (M-DP model).
+      <br><br>
+      In the "Maximum" mode, a full set of information security tools is available, including mandatory access control for local and server infrastructure.
+      <br><br>
+      Starting with the "Enhanced" mode, the interfaces of the Astra Linux Special Edition information security tools significantly narrow the attack surface, and form the main line of defense against malicious external influence.
+      <br><br>
+      Since 2018, the Linux kernel with enhanced self-protection (hardened) with the integration of the developments of the KSPP (Kernel Self Protection Project) project has been included in the distribution.
+      <br><br>
+      Cleaning of RAM and external memory and guaranteed deletion of files: the operating system cleans unused blocks of the file system directly when they are released, using masking sequences.
+      <br><br>
+      Document labeling: The developed labeling mechanism allows the print server (CUPS) to put down the necessary credentials in the printed documents. Mandatory attributes are automatically associated with the print job based on the mandatory context of the received network connection. It is impossible to print documents without marking by access subjects working in a mandatory context with the "unclassified" stamp above.
+      <br><br>
+      Event logging: an advanced logging subsystem integrated into all components of the operating system and performing reliable event logging using a special parlogd service.
+      <br><br>
+      Information protection mechanisms in the graphics subsystem: the graphics subsystem includes the Xorg X server, the Fly user desktop, as well as a number of software tools designed for both users and system administrators. Work has been carried out to create and embed into the graphics subsystem the necessary information protection mechanisms that ensure the implementation of mandatory access control in graphical applications running in their own isolated environment.
         <br><br>
-        С релиза 2021 года (1.7/4.7) в Astra Linux Special Edition доступны режимы защищенности «Базовый» («Орел», несертифицированная версия), «Усиленный» («Воронеж») и «Максимальный» («Смоленск»). Режим «Усиленный» имеет все возможности режима «Базовый» и дополняет их, режим «Максимальный» имеет все возможности режима «Усиленный» и также дополняет их.
-        <br><br>
-        В режиме «Усиленный» доступны механизмы мандатного контроля целостности и замкнутой программной среды, существенно повышающие защиту ОС от взлома, вирусов, захвата полномочий и т.д. Входящая в режим «Усиленный» подсистема безопасности PARSEC разработана на основе верифицированной формальной модели безопасности управления доступом и информационными потоками (МРОСЛ ДП-модели).
-        <br><br>
-        В режиме «Максимальный» доступен полный комплект средств защиты информации, включая мандатное управление доступом для локальной и серверной инфраструктуры.
-        <br><br>
-        Начиная с режима «Усиленный», интерфейсы средств защиты информации Astra Linux Special Edition существенно сужают поверхность атаки, и формируют основной рубеж обороны от вредоносного внешнего воздействия.
-        <br><br>
-        С 2018 года в состав дистрибутива включается ядро Linux с усиленной самозащитой (hardened) с интеграцией наработок проекта KSPP (Kernel Self Protection Project).
-        <br><br>
-        Очистка оперативной и внешней памяти и гарантированное удаление файлов: операционная система выполняет очистку неиспользуемых блоков файловой системы непосредственно при их освобождении, используя маскирующие последовательности.
-        <br><br>
-        Маркировка документов: разработанный механизм маркировки позволяет серверу печати (CUPS) проставлять необходимые учётные данные в выводимых на печать документах. Мандатные атрибуты автоматически связываются с заданием для печати на основе мандатного контекста получаемого сетевого соединения. Вывод на печать документов без маркировки субъектами доступа, работающими в мандатном контексте с грифом выше «несекретно», невозможен.
-        <br><br>
-        Регистрация событий: расширенная подсистема протоколирования, интегрированная во все компоненты операционной системы и осуществляющая надёжную регистрацию событий с использованием специального сервиса parlogd.
-        <br><br>
-        Механизмы защиты информации в графической подсистеме: графическая подсистема включает в себя Х-сервер Xorg, пользовательский рабочий стол Fly, а также ряд программных средств, предназначенных как для пользователей, так и для администраторов системы. Проведена работа по созданию и встраиванию в графическую подсистему необходимых механизмов защиты информации, обеспечивающих выполнение мандатного управления доступом в графических приложениях, запущенных в собственном изолированном окружении.
-        <br><br>
-        Подробнее вы можете прочитать, например, в <a href="https://ru.wikipedia.org/wiki/Astra_Linux">википедии</a>.
+        You can read more, for example, in <a href="https://en.wikipedia.org/wiki/Astra_Linux ">wikipedia</a>.
       
       </div>
     </div>
     <div><br><br><br></div>
     
     <div id="footer">Copyright © danilos01pr@gmail.com</div>
-    <div onclick="window.location.href='../feedback.html'" id="feedback">Оставить отзыв</div>
-    <div onclick="window.location.href='../about.html'" id="about">Обо мне</div>
+    <div onclick="window.location.href='../feedback.html'" id="feedback">Give a feedback</div>
+    <div onclick="window.location.href='../about.html'" id="about">About website</div>
   </body>
 </html>

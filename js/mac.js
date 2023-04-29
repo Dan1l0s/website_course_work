@@ -1,4 +1,4 @@
-var mac = "Семейство операционных систем macOS является вторым по распространённости для десктопа (после Windows). Самой популярной версией macOS является Catalina (83,36 % среди всех версий macOS), следом идут Mojave (5,64 %), High Sierra (5,05 %), Sierra (2,1 %), El Capitan (1,56 %), Yosemite (1,21 %).<br><br>Больше информации можно узнать, нажав 'подробнее' на карточке c macOS";
+var mac = "The macOS family of operating systems is the second most common for the desktop (after Windows). The most popular version of macOS is Catalina (83.36% among all macOS versions), followed by Mojave (5.64%), High Sierra (5.05%), Sierra (2.1%), El Capitan (1.56%), Yosemite (1.21%).<br><br>More information can be found by clicking 'more details' on the macOS card";
 
 function extra_info()   
 {

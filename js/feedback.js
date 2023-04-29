@@ -11,7 +11,7 @@ function send() {
   document.getElementById("submit").onmouseenter = (e) => {
     e.target.style.color = "black";
   };
-  document.getElementById("submit").innerHTML = "Спасибо за отзыв!";
+  document.getElementById("submit").innerHTML = "Thank you for your feedback!!";
   var params = JSON.stringify(
     {
     from: document.querySelector("input").value,
